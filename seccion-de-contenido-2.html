@@ -4,20 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Seccion de contenido 2</title>
+        <title>Curso de html 2020: Seccion de contenido 2</title>
     </head>
     <body>
         <header>
             <h1>NOTICIAS NACIONALES</h1>
             <a href="./index.html">Inicio</a>
         </header>
+        <hr>
+        <!--Aside se utiliza para representar contenido indirectamente relacionado pero que no forma parte del contenido principal-->
+        <aside>
+            <h2>Visita mi canal para mas contenido</h2>
+        </aside>
+
         <main>
-                <!--Forma 1-->
+                <!--Forma 1: un section contiene varios article-->
                 <section>
                     <h2>Section como contenedor</h2>
                     <section>
                         <h3>Noticias del dia.</h3>
-                        
                         <article>
                             <header>
                                 <h4>Noticia 1</h4>
@@ -38,7 +43,9 @@
                         </article>
                     </section>
                 </section>
-                <!--Forma 2-->
+                <hr>
+
+                <!--Forma 2: un article contiene varios section-->
                 <article>
                     <h2>Navegadores mas utilizados en 2020</h2>
                     <section>
@@ -53,7 +60,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laudantium repellat quos vel, alias quo voluptatibus consequatur doloremque provident assumenda, at modi hic eos nobis rerum vitae ab harum mollitia.</p>
                     </section>
                 </article>    
-            </main>
-            <footer>29-03-2020</footer>
-        </body>
-        </html>
+        </main>
+
+        <footer>29-03-2020</footer>
+
+    </body>
+</html>
