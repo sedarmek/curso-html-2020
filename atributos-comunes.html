@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de html 2020: atributos comunes</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Inicio</a>
+        <h1>Atributos comunes</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Atributos: class, id, title, data</h2>
+                <!--
+                    class: identificador que se usa en css
+                    id: identificador que se usa en JS y para hacer navegacion atraves de anclas
+                    title: ayuda a la accesibilidad mostrando mensaje en un tooltip.
+                    data: nos permite guardar algun valor en la etiqueta HTML
+                -->
+                <p class="parrafo-class">Parrafo con atributo class</p>
+                <p id="parrafo-id">Parrafo con atributo id</p>
+                <p title="Mensaje de title">Parrafo con atributo title</p>
+                <p  id="p-data" data-info="informacion de data">Parrafo con atributo data</p>
+
+                <script>
+                    const parrafo = document.getElementById('p-data')
+                    console.log(parrafo.dataset.info)
+                </script>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
