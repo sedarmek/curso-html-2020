@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de html 2020: enlaces</title>
+</head>
+<body>
+    <header>
+        <a href="/">Inicio</a>
+        <h1>Enlaces</h1>
+    </header>
+    <!--Enlaces
+        Tienen el atributo obligatorio href, que especifica la ruta.
+        Tienen el atributo target, que configura la visualizacion del recurso o sitio.
+
+            Rutas absolutas:
+                Tienen un protocolo, http o https(segura) y son unicas en la red.
+                Se suelen utilizar para rutas externas.
+
+            Rutas relativas:
+                Pueden ser relativas al punto donde nos encontramos o a la raiz del proyecto.
+                No usan protocolos.
+                Si el recurso se encuentra al mismo nivel(carpeta) pondremos unicamente el nombre del archivo.
+                Si necesitamos salir de la carpeta actual usaremos ../, se pone un punto por cada nivel de la que queramos salir.
+                
+    -->
+    <main>
+
+        <section>
+            <h2>Rutas absolutas</h2>
+
+            <article>
+                <header><h3>Paginas con http y https</h3></header>
+                <a href="https://www.google.com">google</a>
+                <a href="https://www.youtube.com">youtube</a>
+            </article>
+            <h2>Rutas relativas</h2>
+
+            <article>
+                <header>
+                    <h3>Relativo al punto donde nos encontramos</h3>
+                </header>
+                <a href="index.html">Enlace 1</a>
+                <a href="./index.html">Enlace 2</a>
+                <footer>Ejemplos: href="index.html", href="./index.html"</footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Relativo a la raiz del proyecto</h3>
+                </header>
+                <a href="/">Enlace 3</a>
+                <footer>Ejemplo: href="/"</footer>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+</html>
