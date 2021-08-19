@@ -24,37 +24,67 @@
                 No usan protocolos.
                 Si el recurso se encuentra al mismo nivel(carpeta) pondremos unicamente el nombre del archivo.
                 Si necesitamos salir de la carpeta actual usaremos ../, se pone un punto por cada nivel de la que queramos salir.
+
+            Atributos de los enlaces:
+                target: define donde se abrira el recurso.
+                    "_self" -> valor por defecto, el recurso se abre en la misma pestania
+                    "_blank" -> el recurso se abre en otra pestania nueva
+                download: booleano, sirve para descargar el recurso solicitado.
+                    El recurso debe estar en el mismo servidor.
                 
     -->
     <main>
 
         <section>
-            <h2>Rutas absolutas</h2>
 
             <article>
-                <header><h3>Paginas con http y https</h3></header>
-                <a href="https://www.google.com">google</a>
-                <a href="https://www.youtube.com">youtube</a>
+                <hgroup>
+                    <h2>Rutas absolutas y relativas</h2>
+                    <h3>Rutas absolutas</h3>
+                </hgroup>
+                
+                <article>
+                    <header><h4>Paginas con http y https</h4></header>
+                    <a href="https://www.google.com">google</a>
+                    <a href="https://www.youtube.com">youtube</a>
+                </article>
+                <h3>Rutas relativas</h3>
+                <article>
+                    <header>
+                        <h4>Relativo al punto donde nos encontramos</h4>
+                    </header>
+                    <a href="index.html">Enlace 1</a>
+                    <a href="./index.html">Enlace 2</a>
+                    <footer>Ejemplos: href="index.html", href="./index.html"</footer>
+                </article>
+                <article>
+                    <header>
+                        <h4>Relativo a la raiz del proyecto</h4>
+                    </header>
+                    <a href="/">Enlace 3</a>
+                    <footer>Ejemplo: href="/"</footer>
+                </article>
             </article>
-            <h2>Rutas relativas</h2>
-
+            <hr>
             <article>
-                <header>
-                    <h3>Relativo al punto donde nos encontramos</h3>
-                </header>
-                <a href="index.html">Enlace 1</a>
-                <a href="./index.html">Enlace 2</a>
-                <footer>Ejemplos: href="index.html", href="./index.html"</footer>
+                <h2>Atributos de lo enlaces</h2>
+                <article>
+                    <header>
+                        <h3>Atributo target</h3>
+                    </header>
+                    <a href="/" target="_self">Inicio con target "_self"</a>
+                    <p>El valor "self" abre el recurso en la misma pestaña</p>
+                    <a href="/" target="_blank">Inicio con target "_blank"</a>
+                    <p>El valor "blank" abre el recurso en otra pestaña</p>
+                </article>
+                <article>
+                    <header>
+                        <h3>Atributo download</h3>
+                    </header>
+                    <a href="/" download>Dercargar pagina de inicio</a>
+                    <p>El atributo "download" descarga el recurso siempre y cuando se tenga en el servidor.</p>
+                </article>
             </article>
-
-            <article>
-                <header>
-                    <h3>Relativo a la raiz del proyecto</h3>
-                </header>
-                <a href="/">Enlace 3</a>
-                <footer>Ejemplo: href="/"</footer>
-            </article>
-
         </section>
 
     </main>
