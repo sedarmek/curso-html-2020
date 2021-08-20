@@ -31,6 +31,11 @@
                     "_blank" -> el recurso se abre en otra pestania nueva
                 download: booleano, sirve para descargar el recurso solicitado.
                     El recurso debe estar en el mismo servidor.
+
+            Anclas:
+                Sirven para desplazarse por el scroll de la pagina hacia el elemento que tenga el elemento.
+                El valor en el atributo "href" debera empezar con "#", y debera ser igual que el valor que tenga la propiedad "id" del elemento que quieras enfocar en pantalla.
+                Si el "id" del elemento es "enlace" entonces el "href" sera "#enlace".
                 
     -->
     <main>
@@ -66,6 +71,7 @@
                 </article>
             </article>
             <hr>
+
             <article>
                 <h2>Atributos de lo enlaces</h2>
                 <article>
@@ -83,6 +89,97 @@
                     </header>
                     <a href="/" download>Dercargar pagina de inicio</a>
                     <p>El atributo "download" descarga el recurso siempre y cuando se tenga en el servidor.</p>
+                </article>
+            </article>
+            <hr>
+            <article>
+                <h2>Anclas</h2>
+                <p> Sirven para desplazarse por el scroll de la pagina hacia el elemento que tenga el elemento.
+                    El valor en el atributo "href" debera empezar con "#", y debera ser igual que el valor que tenga la propiedad "id" del elemento que quieras enfocar en pantalla. Ej: href="#ancla" ---> id="ancla"</p>
+                <p>Tambien pueden usarse desde otra pagina agregando los niveles(carpetas) necesarios de la ruta. Ejemplo: href="/carpeta1/carpeta2#ancla"</p>
+                <h3>Enlaces de las anclas</h3>
+                <p><a href="#Ancla-1">Ancla 1</a></p>
+                <p><a href="#Ancla-2">Ancla 2</a></p>
+                <p><a href="#Ancla-3">Ancla 3</a></p>
+                <p><a href="#Ancla-4">Ancla 4</a></p>
+                <p><a href="#Ancla-5">Ancla 5</a></p>
+
+                <h3>Recursos de las anclas</h3>
+                <article id="Ancla-1">
+                    <h4>Recurso 1</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate! </p>
+                </article>
+                <article id="Ancla-2">
+                    <h4>Recurso 2</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate! </p>
+                </article>
+                <article id="Ancla-3">
+                    <h4>Recurso 3</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate! </p>
+                </article>
+                <article id="Ancla-4">
+                    <h4>Recurso 4</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate! </p>
+                </article>
+                <article id="Ancla-5">
+                    <h4>Recurso 5</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, reiciendis saepe. Voluptate repellat nisi quia saepe illum unde, adipisci qui inventore, ad labore consectetur necessitatibus vero enim delectus rem aliquid?
+                    Harum ut doloremque nisi fuga tempore numquam blanditiis animi expedita, suscipit laudantium hic exercitationem asperiores! Optio, ullam. Modi, quae excepturi! Maxime suscipit, harum qui aut itaque ea natus tempora hic?
+                    Quam, adipisci atque iure modi animi quas at maxime provident, excepturi quasi labore. Ipsam aperiam sed consequuntur delectus placeat, suscipit eos eveniet error consectetur molestias maiores officia! Provident, error explicabo.
+                    Ipsum sed architecto id veritatis in voluptatum placeat aspernatur! Repudiandae porro tempora architecto molestias soluta laborum possimus, quam perspiciatis placeat, accusantium, officia ullam consectetur quos eius reiciendis nam vel laboriosam!
+                    Ex autem, officiis rerum quod nihil mollitia omnis porro laborum! Deserunt obcaecati sapiente odio asperiores, aspernatur, numquam molestiae doloremque facilis similique dolorum adipisci quas laboriosam! Ad quia maiores vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in expedita magni voluptate quasi sunt beatae quo suscipit eveniet omnis laboriosam consequatur, ipsum itaque velit quisquam, qui quas a accusamus?
+                    Numquam sunt, assumenda recusandae commodi facere dicta? Ducimus amet dolores quis illo magnam, nulla aspernatur placeat! Obcaecati laboriosam error, suscipit dicta quis veniam dolor voluptatibus culpa, molestiae enim magnam? Culpa.
+                    Vero aut harum incidunt cupiditate neque dignissimos cum hic natus. Totam obcaecati recusandae nobis, nisi voluptate tempora aliquid ad corporis facilis repellat autem voluptas amet eos excepturi est temporibus reprehenderit?
+                    Omnis fugit, officia laboriosam architecto iste quo provident temporibus, est quae veniam ducimus asperiores sint repudiandae dolorum labore aspernatur nostrum blanditiis quibusdam saepe at. Consequatur voluptatibus architecto officiis repellat? Dicta?
+                    Corporis laborum necessitatibus cumque, nobis inventore neque voluptatem ratione! Voluptate facilis autem tempore ratione aperiam ipsa quia doloremque laudantium consectetur voluptates dignissimos laborum quibusdam vero eius velit beatae, veritatis cupiditate!</p>
                 </article>
             </article>
         </section>
