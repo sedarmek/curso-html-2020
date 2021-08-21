@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html: listas</title>
+</head>
+<body>
+    <header>
+        <nav><a href="/">Inicio</a></nav>
+        <h1>Listas</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <header><h2>Listas desordenadas</h2></header>
+                <ul type="disc">
+                    <li>La etiqueta es "ul" por su nombre en ingles "unorder list".</li>
+                    <li>Se utiliza cuando no importa el orden de los elementos.</li>
+                    <li>Tambien cuenta con una etiqueta para cada elemento de la lista "li", por su nombre en ingles "list item".</li>
+                    <li>Cuenta con un atributo:</li>
+                    <ul type="circle">
+                        <li>El atributo "type" que sirve para declarar el estilo de los items.</li>
+                        <ul type="square">
+                            <li>disc</li>
+                            <li>circle</li>
+                            <li>square</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </article>
+            <article>
+                <header><h2>Listas ordenadas</h2></header>
+                <ol type="1" start="1">
+                    <li>La etiqueta es "ol" por su nombre en ingles "order list".</li>
+                    <li>Se utiliza cuando si importa el orden de los elementos.</li>
+                    <li>Utiliza la etiqueta "li" para cada elemento de la lista.</li>
+                    <li>Cuenta con dos atributos:</li>
+                    <ol type="A" start="1">
+                        <li>El atributo "type" que sirve para declarar el estilo de enumeracion</li>
+                        <ol type="I" start="1">
+                            <li>numerico</li>
+                            <li>alfabetico en mayusculas</li>
+                            <li>alfabetico en minusculas</li>
+                            <li>romano en mayuculas</li>
+                            <li>romano en minusculas</li>
+                        </ol>
+                        <li>El atributo "start" que sirve para declarar el inicio de la secuencia(el valor debe ser un numero entero).</li>
+                    </ol>
+                </ol>
+            </article>
+            <article>
+                <header><h2>Listas de definicion</h2></header>
+                <p>La etiqueta es "dl" por su nombre en ingles "definition list".</p>
+                <p>Se utiliza para hacer una lista de definciones, como en un diccionario.</p>
+                <p>Cada elemento lleva dos etiquetas:</p>
+                <dl>
+                    <dt>"dt"(definition term)</dt>
+                    <dd>Es el termino que vamos a definir.</dd>
+                    <dt>"dd"(definition description)</dt>
+                    <dd>Es la decripcion del termino.</dd>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
