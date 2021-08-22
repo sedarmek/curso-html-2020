@@ -1,0 +1,16 @@
+/*
+Los estilos solo son usados para visualizar los efectos de las etiquetas y propiedades de HTML.
+*/
+
+caption{
+    background-color: #7ed4b6;
+}
+thead{
+    background-color: #84dada;
+}
+td{
+    background-color: #bee9db;
+}
+.col{
+    background-color: blueviolet;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/celdas.css">
+    <title>Html: tablas</title>
+</head>
+<body>
+    <header>
+        <nav><a href="/">Inicio</a></nav>
+        <h1>Tablas</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <header><h2>Estructura basica de una tabla</h2></header>
+                <p>Las tablas en html sirven para mostrar contenido tabulado.</p>
+                <p>La estructura basica se compone de:</p>
+                <dl type="circle">
+                    <dt>table</dt>
+                    <dd>Etiqueta que encierra una tabla.</dd>
+                    <dt>tr(table row)</dt>
+                    <dd>Etiqueta que contruye una fila.</dd>
+                    <dt>td(table data)</dt>
+                    <dd>Etiqueta que contruye una celda.El numero de celdas en una fila establece el numero de columnas.</dd>
+                </dl>
+                <footer>
+                    <p>Ejemplo:</p>
+                    <table>
+                        <tr>
+                            <td>celda1</td>
+                            <td>celda2</td>
+                            <td>celda3</td>
+                            <td>celda4</td>
+                        </tr>
+                        <tr>
+                            <td>celda5</td>
+                            <td>celda6</td>
+                            <td>celda7</td>
+                            <td>celda8</td>
+                        </tr>
+                    </table>
+                </footer>
+            </article>
+
+            <article>
+                <header><h2>Estructura completa de una tabla</h2></header>
+                <ul>
+                    <li>La etiqueta "caption" establece el titulo de la tabla,es opcional y se coloca justo despues de la etiqueta "table"</li>
+                    <li>La etiqueta "thead" establece la cabecera de la tabla. Dentro de la etiqueta estara una etiqueta "tr" y por ultimo la etiqueta "th".</li>
+                    <li>La etiqueta "tbody" establece el cuerpo de la tabla, donde debe ir el contenido.</li>
+                    <li>La etiqueta "tfoot" establece el pie de tabla, se suele usar pasa suma y totales</li>
+                </ul>
+                <footer>
+                    <p>Ejemplo:</p>
+                    <table>
+                        <!--Titulo de tabla-->
+                        <caption>Titulo de la tabla</caption>
+                        <!--Cabecera de la tabla-->
+                        <thead>
+                            <tr>
+                                <th>"th"1</th>
+                                <th>"th"2</th>
+                                <th>"th"3</th>
+                                <th>"th"4</th>
+                            </tr>
+                        </thead>
+                        <!--Cuerpo de la tabla-->
+                        <tbody>
+                            <tr>
+                                <td>celda1</td>
+                                <td>celda2</td>
+                                <td>celda3</td>
+                                <td>celda4</td>
+                            </tr>
+                            <tr>
+                                <td>celda5</td>
+                                <td>celda6</td>
+                                <td>celda7</td>
+                                <td>celda8</td>
+                            </tr>
+                        </tbody>
+                        <!--Pie de tabla-->
+                        <tfoot>
+                            <tr>
+                                <td>Pie</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </footer>
+            </article>
+
+            <article>
+                <header><h2>Atributos de la tabla</h2></header>
+                <ul>
+                    <li>"rowspan" establece la cantidad de filas que ocupa una celda,por defecto el valor es 1.</li>
+                    <li>"colspan" establece la cantidad de columnas que ocupa una celda, por defecto es 1.</li>
+                </ul>
+                <footer>
+                    <p>Ejemplo:
+                        <table>
+                            <caption>Titulo de la tabla</caption>
+                            <thead>
+                                <tr>
+                                    <th>"th"1</th>
+                                    <th>"th"2</th>
+                                    <th>"th"3</th>
+                                    <th>"th"4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>celda1</td>
+                                    <td>celda2</td>
+                                    <td>celda3</td>
+                                    <td>celda4</td>
+                                </tr>
+                                <tr>
+                                    <td>celda5</td>
+                                    <td>celda6</td>
+                                    <td>celda7</td>
+                                    <!--Ocupa dos filas-->
+                                    <td rowspan="2">celda8</td>
+                                </tr>
+                                <tr>
+                                    <td>celda9</td>
+                                    <!--Ocupa dos columnas-->
+                                    <td colspan="2">celda10</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <!--Ocupa dos columnas-->
+                                    <td colspan="2">Pie de tabla</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </p>
+                </footer>
+                
+            </article>
+
+            <article>
+                <header><h2>Seleccion de columnas</h2></header>
+                <ul>
+                    <li><p>La etiqueta "colgroup" agrupa las columnas de la tabla.</p></li>
+                    <li><p>La etiqueta "col" establece cada una de las columnas,por lo que deben ser igual al numero de columnas de la tabla.</p>
+                    <p>Con el atributo "span" se pueden agrupar las columnas en una etiqueta "col", similar al atributo "rowspan" y "colspan".</p></li>
+                </ul>
+                <footer>
+                    <p>Ejemplo:</p>
+                    <table>
+                        <caption>Titulo de la tabla</caption>
+
+                        <!--Agrupacion de columnas-->
+                        <colgroup>
+                            <col span="1" class="col">
+                            <col span="3" class="col">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th>"th"1</th>
+                                <th>"th"2</th>
+                                <th>"th"3</th>
+                                <th>"th"4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>celda1</td>
+                                <td>celda2</td>
+                                <td>celda3</td>
+                                <td>celda4</td>
+                            </tr>
+                            <tr>
+                                <td>celda5</td>
+                                <td>celda6</td>
+                                <td>celda7</td>
+                                <td>celda8</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Pie</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </footer>
+            </article>
+            
+        </section>
+    </main>
+</body>
+</html>
