@@ -23,19 +23,155 @@
                     <li>La etiqueta "&#60input&#62" sirve para crear un campo que permita al usuario interactuar.</li>
                     <li>La etiqueta "&#60button&#62" crea un boton que permitira enviar el formulario.</li>
                 </ul>
+                <h3>Asociar input y label</h3>
+                <p>El atributo "for" sirve para vincular una etiqueta label a una etiqueta input especifica por medio del id del input.</p>
                 <h3>Muestra de formulario</h3>
                     <form>
-                        <label>Label del formulario</label>
-                        <input>
+                        <label for="nombre">Label del formulario</label>
+                        <input id="nombre">
                         <button>Boton del formulario</button>
                     </form>
                     <footer>
                         <h4>Codigo:</h4>
-                        <pre><code>&#60form><br>   &#60label>Label del formulario&#60/label><br>   &#60input><br>   &#60button>Boton del formulario&#60/button><br>&#60/form><br>
+                        <pre><code>&#60form><br>   &#60labelfor="nombre">Label del formulario&#60/label><br>   &#60input id="nombre"><br>   &#60button>Boton del formulario&#60/button><br>&#60/form><br>
                             </code>
                         </pre>
                     </footer>
             </article>
+            <hr>
+
+            <article>
+                <header>
+                    <h2>Tipos de input</h2> 
+                    <p>Los tipos de input se declaran dentro de la etiqueta input con la propiedad "type".</p>
+                </header>
+
+                    <h3>Inputs de tipo boton</h3>
+                        <h4>Tipo button</h4>
+                            <ul>
+                                <li>Es un boton que se comporta igual que la etiqueta button, pero no sirve para enviar formulario, su funcion sera programada en javascript.</li>
+                                <li>La propiedad "type" sirve para declarar el nombre dentro del boton.</li>
+                            </ul>
+                            <form><input type="button" value="Input button"></form>
+                            <pre><code>Codigo: &#60input type="button" value="Input button"></code></pre>
+
+                        <h4>Tipo submit</h4>
+                            <ul>
+                                <li>Es un boton que se utiliza para enviar el formulario.</li>
+                            </ul>
+                            <form><input type="submit" value="Input submit"></form>
+                            <pre><code>Codigo: &#60input type="submit" value="Input submit"></code></pre>
+
+                    <h3>Inputs de tipo fecha</h3>
+                        <h4>Tipo date</h4>
+                            <ul>
+                                <li>Se utiliza para introducir una fecha.</li>
+                            </ul>
+                            <form><input type="date"></form>
+                            <pre><code>Codigo: &#60input type="date"></code></pre>
+                        
+                        <h4>Tipo time</h4>
+                            <ul>
+                                <li>Se utiliza para introducir una hora.</li>
+                            </ul>
+                            <form><input type="time"></form>
+                            <pre><code>Codigo: &#60input type="time"></code></pre>
+
+                        <h4>Tipo datetime-local</h4>
+                            <ul>
+                                <li>Se utiliza para introducir fecha y hora, no funciona en firefox.</li>
+                            </ul>
+                            <form><input type="datetime-local"></form>
+                            <pre><code>Codigo: &#60input type="datetime-local"></code></pre>
+
+                        <h4>Tipo week</h4>
+                            <ul>
+                                <li>Se utiliza para introducir el numero de semana.</li>
+                            </ul>
+                            <form><input type="week"></form>
+                            <pre><code>Codigo: &#60input type="week"></code></pre>
+
+                        <h4>Tipo month</h4>
+                            <ul>
+                                <li>Se utiliza para introducir el mes.</li>
+                            </ul>
+                            <form><input type="month"></form>
+                            <pre><code>Codigo: &#60input type="month"></code></pre>
+
+                    <h3>Inputs para moviles</h3>
+                        <h4>Tipo search</h4>
+                            <ul>
+                                <li>Se utiliza para las barras de busqueda.</li>
+                            </ul>
+                            <form><input type="search"></form>
+                            <pre><code>Codigo: &#60input type="search"></code></pre>
+
+                        <h4>Tipo tel</h4>
+                            <ul>
+                                <li>Se utiliza para introducir numeros telefonicos.</li>
+                            </ul>
+                            <form><input type="tel"></form>
+                            <pre><code>Codigo: &#60input type="tel"></code></pre>
+
+                        <h4>Tipo email</h4>
+                            <ul>
+                                <li>Se utiliza para introducir un email.</li>
+                            </ul>
+                            <form><input type="email"></form>
+                            <pre><code>Codigo: &#60input type="email"></code></pre>
+
+                        <h4>Tipo password</h4>
+                            <ul>
+                                <li>Se utiliza para introducir contraseña.</li>
+                            </ul>
+                            <form><input type="password"></form>
+                            <pre><code>Codigo: &#60input type="password"></code></pre>
+
+                        <h4>Tipo url</h4>
+                            <ul>
+                                <li>Se utiliza para introducir un URL.</li>
+                            </ul>
+                            <form><input type="url"></form>
+                            <pre><code>Codigo: &#60input type="url"></code></pre>
+                    <h3>Inputs adicionales</h3>
+                        <h4>Tipo color</h4>
+                            <ul>
+                                <li>Se utiliza para especificar un color.</li>
+                            </ul>
+                            <form><input type="color"></form>
+                            <pre><code>Codigo: &#60input type="color"></code></pre>
+
+                        <h4>Tipo number</h4>
+                            <ul>
+                                <li>Se utiliza para valores numericos.</li>
+                            </ul>
+                            <form><input type="number"></form>
+                            <pre><code>Codigo: &#60input type="number"></code></pre>
+
+                        <h4>Tipo range</h4>
+                            <ul>
+                                <li>Se utiliza para establecer un rango.</li>
+                                <li>El atributo "step" sirve para definir los pasos.</li>
+                                <li>El atributo "min" y "max" se utiliza para establecer el rango minimo y maximo respectivamente.</li>
+                            </ul>
+                            <form><input type="range" step="2" min="0" max="10"></form>
+                            <pre><code>Codigo: &#60input type="range" step="2" min="0" max="10"></code></pre>
+
+                        <h4>Tipo reset</h4>
+                            <ul>
+                                <li>Se utiliza para resetear el formulario.</li>
+                            </ul>
+                            <form><input type="reset"></form>
+                            <pre><code>Codigo: &#60input type="reset"></code></pre>
+
+                        <h4>Tipo text</h4>
+                            <ul>
+                                <li>Valor por defecto.</li>
+                            </ul>
+                            <form><input type="text"></form>
+                            <pre><code>Codigo: &#60input type="text"></code></pre>
+            </article>
+
         </section>
     </main>
 </body>
