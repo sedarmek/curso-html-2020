@@ -170,6 +170,25 @@
                             </ul>
                             <form><input type="text"></form>
                             <pre><code>Codigo: &#60input type="text"></code></pre>
+
+                    <h3>Inputs seleccionables</h3>
+                        <h4>Tipo radio</h4>
+                            <ul>
+                                <li>Permite seleccionar una unica opcion de una lista de opciones relacionadas.</li>
+                                <ul>
+                                    <li>Con el atributo "name" podra relacionar a una misma lista de opciones  siempre que tengan el mismo valor.</li>
+                                    <li>Con el atributo booleano "checked" para marcar una opcion por defecto.</li>
+                                </ul>
+                            </ul>
+                            <form>
+                                <label>Opcion 1
+                                <input type="radio" name="opciones" checked>
+                                </label>
+                                <label>Opcion 2
+                                    <input type="radio" name="opciones">
+                                </label>
+                            </form>
+                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="radio"  name="opciones" checked>&#60/label>&#60label>&#60input type="radio"  name="opciones">&#60/label></code></pre>
             </article>
 
         </section>
