@@ -1,16 +1,25 @@
 /*
 Los estilos solo son usados para visualizar los efectos de las etiquetas y propiedades de HTML.
 */
-
+:root{
+    --color-text: #141629;
+}
 caption{
     background-color: #7ed4b6;
+    color: var(--color-text);
 }
 thead{
     background-color: #84dada;
+    color: var(--color-text);
 }
 td{
     background-color: #bee9db;
+    color: var(--color-text);
+}
+th{
+    color: var(--color-text);
 }
 .col{
     background-color: blueviolet;
+    color: var(--color-text);
 }

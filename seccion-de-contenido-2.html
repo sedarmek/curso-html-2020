@@ -4,31 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/principal-style.css">
         <title>Curso de html 2020: Seccion de contenido 2</title>
     </head>
     <body>
-        <header>
+        <header class="header-principal">
             <h1>NOTICIAS NACIONALES</h1>
             <a href="./index.html">Inicio</a>
         </header>
         <hr>
-        <!--Aside se utiliza para representar contenido indirectamente relacionado pero que no forma parte del contenido principal-->
-        <aside>
-            <h2>Visita mi canal para mas contenido</h2>
-        </aside>
-
+        
         <main>
-                <!--Forma 1: un section contiene varios article-->
+            <!--Forma 1: un section contiene varios article-->
+            <section>
+                <h2>Section como contenedor</h2>
                 <section>
-                    <h2>Section como contenedor</h2>
-                    <section>
-                        <h3>Noticias del dia.</h3>
-                        <article>
-                            <header>
-                                <h4>Noticia 1</h4>
-                            </header>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dolorum unde expedita reprehenderit, aspernatur, doloremque consequuntur nostrum maiores quasi nam, distinctio laborum rerum aut maxime possimus vero eos consectetur quibusdam!</p>
-                            <footer>Garcia,NL</footer>
+                    <h3>Noticias del dia.</h3>
+                    <article>
+                        <header>
+                            <h4>Noticia 1</h4>
+                        </header>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dolorum unde expedita reprehenderit, aspernatur, doloremque consequuntur nostrum maiores quasi nam, distinctio laborum rerum aut maxime possimus vero eos consectetur quibusdam!</p>
+                        <footer>Garcia,NL</footer>
                         </article>
                         <article>
                             <header>
@@ -42,27 +39,36 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint cupiditate quibusdam non perferendis natus voluptatum velit? Odit, quae? Minus odit, optio commodi repellendus possimus cum dolore? Repellendus, rerum vero!</p>
                         </article>
                     </section>
-                </section>
-                <hr>
-
-                <!--Forma 2: un article contiene varios section-->
-                <article>
-                    <h2>Navegadores mas utilizados en 2020</h2>
-                    <section>
-                        <header>
-                            <h3>Chrome</h3>
-                        </header>
+                    <hr>
+                    
+                    <!--Forma 2: un article contiene varios section-->
+                    <article>
+                        <h2>Navegadores mas utilizados en 2020</h2>
+                        <section>
+                            <header>
+                                <h3>Chrome</h3>
+                            </header>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam maxime laborum, ab, reiciendis ut voluptatum, quod aliquid quam delectus sed impedit magnam! Facere quam tempore distinctio, velit odit officia doloremque.</p>
-                        <footer>Creado por Google</footer>
-                    </section>
-                    <section>
-                        <h3>Firefox</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laudantium repellat quos vel, alias quo voluptatibus consequatur doloremque provident assumenda, at modi hic eos nobis rerum vitae ab harum mollitia.</p>
-                    </section>
-                </article>    
+                            <footer>Creado por Google</footer>
+                        </section>
+                        <section>
+                            <h3>Firefox</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laudantium repellat quos vel, alias quo voluptatibus consequatur doloremque provident assumenda, at modi hic eos nobis rerum vitae ab harum mollitia.</p>
+                        </section>
+                    </article>    
+                </section>
+                <!--Aside se utiliza para representar contenido indirectamente relacionado pero que no forma parte del contenido principal-->
+                <aside>
+                <h2>Cursos</h2>
+                <ul class="ul-aside">
+                    <li><a href="https://sedarmek.github.io/curso-html-2020/">HTML</a></li>
+                    <li><a href="https://sedarmek.github.io/cursoCss2020/">CSS</a></li>
+                    <li><a href="#">JS</a></li>
+                </ul>
+                </aside>
         </main>
 
-        <footer>29-03-2020</footer>
+        <footer>Seda SA de CV</footer>
 
     </body>
 </html>

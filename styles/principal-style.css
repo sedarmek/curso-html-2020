@@ -1,0 +1,102 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    color: #aacbe6;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --background-color: #26252c;/*color de los hijos*/
+    --color-a: #7475da;
+    --border-sections: 2px solid black;
+}
+
+body{
+    background-color: #232227;
+    margin: 5px;
+    display: grid;
+    grid-template-areas: "header" "contain" "footer";
+    grid-template-columns: 80%;
+    /* grid-template-rows: 1fr 5.5fr 0.5fr; *//*<== Se comenta por que cuando tiene mucho contenido el main aumenta demasiado el tamanio del header*/
+    grid-gap: 7px;
+    justify-content: center;
+    align-content: center;
+}
+/*Encabezado*/
+.header-principal{
+    background-color: var(--background-color);
+    padding: 1rem;
+    border: var(--border-sections);
+    text-align: center;
+    display: grid;
+    grid-area: "header";
+    justify-content: center;
+    align-content: center;
+}
+h1, h2{
+    padding: 1rem;
+    text-shadow: 5px 4px 5px #545f6b;
+}
+h3,h4,h5,h6{
+    padding: 0.5rem;
+}
+p, li, hr{
+    margin: 0.3rem;
+}
+/*Contenido principal*/
+main{
+    background-color: var(--background-color);
+    border: var(--border-sections);
+    padding: 1rem;
+    display: grid;
+    grid-area: "contain";
+    grid-template-columns: 4fr 1fr;
+    grid-auto-flow: column;
+    justify-content: right;
+    align-content: center;
+    grid-gap: 0.5rem;
+}
+section{
+    display: grid;
+    padding: 1rem;
+    border: var(--border-sections);
+    justify-content: left;
+    align-content: center;
+}
+aside{
+    border: var(--border-sections);
+    display: grid;
+    grid-template-rows: 2rem 10rem;
+    grid-gap: .5em;
+    justify-content: center;
+}
+.ul-aside{
+    border: var(--border-sections);
+    margin: 1em .1em;
+    list-style: none;
+    display: grid;
+    align-content: flex-start;
+    grid-gap: .5rem;
+}
+.ul-aside li{
+    background-color: #5b4d72;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.ul-aside li:hover{
+    background-color: #6c5d85;
+}
+
+/*Pie de pagina*/
+footer{
+    background-color: var(--background-color);
+    border: var(--border-sections);
+    padding: 1rem;
+    display: grid;
+    grid-area: "footer";
+    justify-content: center;
+    align-content: center;
+}
