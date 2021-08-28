@@ -188,11 +188,12 @@
                                     <input type="radio" name="opciones">
                                 </label>
                             </form>
-                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="radio"  name="opciones" checked>&#60/label>&#60label>&#60input type="radio"  name="opciones">&#60/label></code></pre>
+                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="radio"  name="opciones" checked>&#60/label>
+                                &#60label>&#60input type="radio"  name="opciones">&#60/label></code></pre>
 
-                            <h4>Tipo checkbox</h4>
+                        <h4>Tipo checkbox</h4>
                             <ul>
-                                <li>Permite seleccionar mas de una opcion de una lista de opciones relacionadas.</li>
+                                <li>Permite seleccionar varias opciones de una lista de opciones relacionadas.</li>
                                 <ul>
                                     <li>Con el atributo "name" podra relacionar a una misma lista de opciones  siempre que tengan el mismo valor.</li>
                                     <li>Con el atributo booleano "checked" para marcar una opcion por defecto, que pueden ser mas de una.</li>
@@ -206,7 +207,30 @@
                                     <input type="checkbox" name="opciones" checked>
                                 </label>
                             </form>
-                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="checkbox"  name="opciones" checked>&#60/label>&#60label>&#60input type="checkbox"  name="opciones">&#60/label checked></code></pre>
+                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="checkbox"  name="opciones" checked>&#60/label>
+                                &#60label>&#60input type="checkbox"  name="opciones">&#60/label checked></code></pre>
+
+                        <h4>Tipo select</h4>
+                            <ul>
+                                <li>Crea una lista de opciones donde podemos seleccionar una o varias opciones</li>
+                                <ul>
+                                    <li>Con el atributo booleano "multiple" se podran seleccionar varias opciones(usando la tecla ctrl+click), este es asignado en la etiqueta "select".</li>
+                                    <li>Con el atributo "name" podra nombrar lista de opciones, en la etiqueta "select".</li>
+                                    <li>Cada opcion ira dentro de una etiqueta "option", donde tambien se asignara el valor del atributo "value".</li>
+                                </ul>
+                            </ul>
+                            <form>
+                                <select name="opciones-select" multiple>
+                                    <option value="op1">Opcion 1</option>
+                                    <option value="op2">Opcion 2</option>
+                                    <option value="op3">Opcion 3</option>
+                                </select>
+                            </form>
+                            <pre><code>Codigo: &#60select name="opciones-select" multiple>
+                                &#60option value="op1">Opcion 1&#60/option>
+                                &#60option value="op2">Opcion 2&#60/option>
+                                &#60option value="op3">Opcion 3&#60/option>
+                            &#60/select></code></pre>
             </article>
 
         </section>
