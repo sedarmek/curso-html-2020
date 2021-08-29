@@ -41,9 +41,14 @@ h1, h2{
 }
 h3,h4,h5,h6{
     padding: 0.5rem;
+    text-shadow: 5px 4px 5px #545f6b;
+    color: #9090e9;
 }
 p, li, hr{
     margin: 0.3rem;
+}
+input, button, option,optgroup{
+    color: black ;
 }
 /*Contenido principal*/
 main{

@@ -216,22 +216,56 @@
                                 <li>Crea una lista de opciones donde podemos seleccionar una o varias opciones</li>
                                 <ul>
                                     <li>Con el atributo booleano "multiple" se podran seleccionar varias opciones(usando la tecla ctrl+click), este es asignado en la etiqueta "select".</li>
-                                    <li>Con el atributo "name" podra nombrar lista de opciones, en la etiqueta "select".</li>
+                                    <li>Con el atributo "name" podra nombrar la lista de opciones, en la etiqueta "select".</li>
                                     <li>Cada opcion ira dentro de una etiqueta "option", donde tambien se asignara el valor del atributo "value".</li>
+                                    <li>Con la etiqueta "optgroup" se pueden ordenar las opciones por categoria.</li>
                                 </ul>
                             </ul>
                             <form>
                                 <select name="opciones-select" multiple>
-                                    <option value="op1">Opcion 1</option>
-                                    <option value="op2">Opcion 2</option>
-                                    <option value="op3">Opcion 3</option>
+                                    <optgroup label="Categoria 1">
+                                        <option value="op1">Opcion 1</option>
+                                        <option value="op2">Opcion 2</option>
+                                    </optgroup>
+                                    <optgroup label="Categoria 2">
+                                        <option value="op3">Opcion 3</option>
+                                    </optgroup>
                                 </select>
                             </form>
                             <pre><code>Codigo: &#60select name="opciones-select" multiple>
-                                &#60option value="op1">Opcion 1&#60/option>
-                                &#60option value="op2">Opcion 2&#60/option>
-                                &#60option value="op3">Opcion 3&#60/option>
+                                &#60optgroup label="Categoria 1">
+                                    &#60option value="op1">Opcion 1&#60/option>
+                                    &#60option value="op2">Opcion 2&#60/option>
+                                &#60/optgroup>
+                                &#60optgroup label="Categoria 2">
+                                    &#60option value="op3">Opcion 3&#60/option>
+                                &#60/optgroup>
                             &#60/select></code></pre>
+
+                        <h4>Tipo list</h4>
+                            <ul>
+                                <li>Crea una lista de opciones desplegables que ademas se puede escribir sobre el area vacia para una busqueda con filtros.</li>
+                                <ul>
+                                    <li>Necesita un atributo "list" para hacer referencia a la eitqueta "datalist" que contendra todas las opciones.</li>
+                                    <li>La etiqueta "datalist" necesita el atributo "id" con el mismo valor del atributo "list" para ser asignado por el input.</li>
+                                    <li>Con la etiqueta "option" declara cada una de las opciones.</li>
+                                    <li>Con el atributo "value" se inserta el nombre de la opcion, por lo que no es necesario declararlo dentro de la etiqueta "option"</li>
+                                </ul>
+                            </ul>
+                            <form>
+                                <input type="list" list="datalist-1">
+                                <datalist id="datalist-1">
+                                    <option value="Opcion 1">No es necesario declarar un valor en esta parte.</option>
+                                    <option value="Opcion 2">Puede servir para asignar una descripcion.</option>
+                                    <option value="Opcion 3"></option>
+                                </datalist>
+                            </form>
+                            <pre><code>Codigo: &#60input type="list" list="datalist-1">
+                                &#60datalist id="datalist-1">
+                                    &#60option value="Opcion 1">No es necesario declarar un valor en esta parte.</option>
+                                    &#60option value="Opcion 2">Puede servir para asignar una descripcion.</option>
+                                    &#60option value="Opcion 3"></option>
+                                &#60/datalist></code></pre>
             </article>
         </section>
         <aside>
