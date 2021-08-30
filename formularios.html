@@ -134,6 +134,7 @@
                             </ul>
                             <form><input type="url"></form>
                             <pre><code>Codigo: &#60input type="url"></code></pre>
+
                     <h3>Inputs adicionales</h3>
                         <h4>Tipo color</h4>
                             <ul>
@@ -189,8 +190,13 @@
                                     <input type="radio" name="opciones">
                                 </label>
                             </form>
-                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="radio"  name="opciones" checked>&#60/label>
-                                &#60label>&#60input type="radio"  name="opciones">&#60/label></code></pre>
+                            <pre>
+                                <code>
+                                    Codigo: 
+                                    &#60label>Opcion 1&#60input type="radio"  name="opciones" checked>&#60/label>
+                                    &#60label>&#60input type="radio"  name="opciones">&#60/label>
+                                </code>
+                            </pre>
 
                         <h4>Tipo checkbox</h4>
                             <ul>
@@ -208,9 +214,24 @@
                                     <input type="checkbox" name="opciones" checked>
                                 </label>
                             </form>
-                            <pre><code>Codigo: &#60label>Opcion 1&#60input type="checkbox"  name="opciones" checked>&#60/label>
-                                &#60label>&#60input type="checkbox"  name="opciones">&#60/label checked></code></pre>
+                            <pre>
+                                <code>
+                                    Codigo: 
+                                    &#60label>Opcion 1&#60input type="checkbox"  name="opciones" checked>&#60/label>
+                                    &#60label>&#60input type="checkbox"  name="opciones">&#60/label checked>
+                                </code>
+                            </pre>
 
+                        <h4>Tipo file</h4>
+                            <ul>
+                                <li>Se utiliza para cargar archivos.</li>
+                            </ul>
+                            <form>
+                                <input type="file">
+                            </form>
+                            <pre>
+                                <code>Codigo: &#60input type="file"></code>
+                            </pre>
                         <h4>Tipo select</h4>
                             <ul>
                                 <li>Crea una lista de opciones donde podemos seleccionar una o varias opciones</li>
@@ -232,17 +253,21 @@
                                     </optgroup>
                                 </select>
                             </form>
-                            <pre><code>Codigo: &#60select name="opciones-select" multiple>
-                                &#60optgroup label="Categoria 1">
-                                    &#60option value="op1">Opcion 1&#60/option>
-                                    &#60option value="op2">Opcion 2&#60/option>
-                                &#60/optgroup>
-                                &#60optgroup label="Categoria 2">
-                                    &#60option value="op3">Opcion 3&#60/option>
-                                &#60/optgroup>
-                            &#60/select></code></pre>
-
-                        <h4>Tipo list</h4>
+                            <pre>
+                                <code>
+                                    Codigo:
+                                    &#60select name="opciones-select" multiple>
+                                        &#60optgroup label="Categoria 1">
+                                            &#60option value="op1">Opcion 1&#60/option>
+                                            &#60option value="op2">Opcion 2&#60/option>
+                                        &#60/optgroup>
+                                        &#60optgroup label="Categoria 2">
+                                            &#60option value="op3">Opcion 3&#60/option>
+                                        &#60/optgroup>
+                                    &#60/select>
+                                </code>
+                            </pre>
+                        <h4>Tipo list(con etiqueta datalist)</h4>
                             <ul>
                                 <li>Crea una lista de opciones desplegables que ademas se puede escribir sobre el area vacia para una busqueda con filtros.</li>
                                 <ul>
@@ -260,12 +285,123 @@
                                     <option value="Opcion 3"></option>
                                 </datalist>
                             </form>
-                            <pre><code>Codigo: &#60input type="list" list="datalist-1">
+                            <pre>
+                                <code>
+                                Codigo:
+                                &#60input type="list" list="datalist-1">
                                 &#60datalist id="datalist-1">
-                                    &#60option value="Opcion 1">No es necesario declarar un valor en esta parte.</option>
-                                    &#60option value="Opcion 2">Puede servir para asignar una descripcion.</option>
-                                    &#60option value="Opcion 3"></option>
-                                &#60/datalist></code></pre>
+                                    &#60option value="Opcion 1">No es necesario declarar un valor en esta parte.&#60/option>
+                                    &#60option value="Opcion 2">Puede servir para asignar una descripcion.&#60/option>
+                                    &#60option value="Opcion 3">&#60/option>
+                                &#60/datalist>
+                                </code>
+                            </pre>
+            </article>
+            <hr>
+            <article>
+                <header>
+                    <h2>Etiquetas de formulario</h2>
+                </header>
+                    <ul><li>Ademas de las etiquetas para la estructura basica de un formulario, tambien existen otras adicionales.</li></ul>
+
+                    <h3>Etiqueta fieldset</h3>
+                        <ul>
+                            <li>Se utiliza para agrupar elementos dentro de un formulario.</li>
+                            <ul>
+                                <li><h4>Etiqueta legend</h4></li>
+                                <li>Representa una etiqueta para el contenido del fieldset.</li>
+                            </ul>
+                        </ul>
+                        <form>
+                            <fieldset>
+                                <legend>Legend de fieldset 1</legend>
+                                <label for="uno">Primer elemeno</label>
+                                <input type="text" id="uno">
+                                <label for="dos">Segundo elemento</label>
+                                <input type="text" id="dos">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Legend de fieldset 2</legend>
+                                <label for="tres">Tercer elemeno</label>
+                                <input type="text" id="tres">
+                                <label for="cuatro">Cuarto elemento</label>
+                                <input type="text" id="cuatro">
+                            </fieldset>
+                        </form>
+                        <pre>
+                            <code>
+                                &#60fieldset>
+                                    &#60legend>Legend de fieldset 1&#60/legend>
+                                    &#60label for="uno">Primer elemeno&#60/label>
+                                    &#60input type="text" id="uno">
+                                    &#60label for="dos">Segundo elemento&#60/label>
+                                    &#60input type="text" id="dos">
+                                &#60/fieldset>
+                                &#60fieldset>
+                                    &#60legend>Legend de fieldset 2&#60/legend>
+                                    &#60label for="tres">Tercer elemeno&#60/label>
+                                    &#60input type="text" id="tres">
+                                    &#60label for="cuatro">Cuarto elemento&#60/label>
+                                    &#60input type="text" id="cuatro">
+                                &#60/fieldset>
+                            </code>
+                        </pre>
+                    
+                    <h3>Etiqueta meter</h3>
+                        <ul>
+                            <li>Representa un valor dentro de un rango conocido.</li>
+                            <ul>
+                                <li>Dependdiendo del rango del atributo "value" se puede repersentar un valor segun los atributos "low","optimum" y "high".</li>
+                            </ul>
+                        </ul>
+                        <form>
+                            <label for="fuel-1">Rango</label>
+                            <meter id="fuel-1" value="20" min="0" max="100" low="30" optimum="50" high="80"></meter>
+                            <label for="fuel-2">Rango 2</label>
+                            <meter id="fuel-2" value="50" min="0" max="100" low="30" optimum="50" high="80"></meter>
+                            <label for="fuel-3">Rango 3</label>
+                            <meter id="fuel-3" value="81" min="0" max="100" low="30" optimum="50" high="80"></meter>
+                        </form>
+                        <pre>
+                            <code>Codigo:
+                            &#60label for="fuel-1">Rango&#60/label>
+                            &#60meter id="fuel-1" value="20" min="0" max="100" low="30" optimum="50" high="80">&#60/meter>
+                            &#60label for="fuel-2">Rango 2&#60/label>
+                            &#60meter id="fuel-2" value="50" min="0" max="100" low="30" optimum="50" high="80">&#60/meter>
+                            &#60label for="fuel-3">Rango 3&#60/label>
+                            &#60meter id="fuel-3" value="81" min="0" max="100" low="30" optimum="50" high="80">&#60/meter>
+                            </code>
+                        </pre>
+
+                    <h3>Etiqueta progress</h3>
+                        <ul>
+                            <li>Representa el progreso de una tarea.</li>
+                        </ul>
+                        <form>
+                            <label for="task">Tarea</label>
+                            <progress id="task" value="80" max="100"></progress>
+                        </form>
+                        <pre>
+                            <code>
+                                &#60label for="task">Tarea&#60/label>
+                                &#60progress id="task" value="80" max="100">&#60/progress>
+                            </code>
+                        </pre>
+
+                    <h3>Etiqueta textarea</h3>
+                        <ul>
+                            <li>Se utiliza para introducir texto en un formulario.</li>
+                        </ul>
+                        <form>
+                            <label for="text">Mensaje</label>
+                            <textarea id= "text" cols="100" rows="2">Escribe el mensaje aqui.</textarea>
+                        </form>
+                        <pre>
+                            <code>
+                                &#60label for="text">Mensaje&#60/label>
+                                &#60textarea id= "text" cols="100" rows="2">Escribe el mensaje aqui.&#60/textarea>
+                            </code>
+                        </pre>
             </article>
         </section>
         <aside>
