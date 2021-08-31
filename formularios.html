@@ -402,6 +402,151 @@
                                 &#60textarea id= "text" cols="100" rows="2">Escribe el mensaje aqui.&#60/textarea>
                             </code>
                         </pre>
+
+                <h2>Atributos de los formularios</h2>
+                    <h3>Atributo placeholder</h3>
+                        <ul>
+                            <li>Da una pista de lo que el usuario tiene que escribir.</li>
+                        </ul>
+                        <form>
+                            <label for="nombre-1">Nombre: </label>
+                            <input type="text" id="nombre-1" placeholder="Introduce tu nombre">
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="nombre-1">Nombre: &#60/label>
+                                &#60input type="text" id="nombre-1" placeholder="Introduce tu nombre">
+                            </code>
+                        </pre>
+
+                    <h3>Atributo required</h3>
+                        <ul>
+                            <li>Hace que un campo sea obligatorio.</li>
+                            <li>En caso de que no se rellene el campo, al momento de enviar el formulario saldra un mensaje que advierte al usuario.</li>
+                        </ul>
+                        <form>
+                            <label for="camp-oblig">Apellido: </label>
+                            <input type="text" id="camp-oblig" required>
+                            <button>Enviar formulario</button>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="camp-oblig">Apellido: &#60/label>
+                                &#60input type="text" id="camp-oblig" required>
+                                &#60button>Enviar formulario&#60/button>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo readonly</h3>
+                        <ul>
+                            <li>Hace que un campo sea de solo lectura.</li>
+                        </ul>
+                        <form>
+                            <label for="camp-readonly">Campo de lectura: </label>
+                            <input type="text" id="camp-readonly" value="No se puede modificar." readonly>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="camp-readonly">Campo de lectura: &#60/label>
+                                &#60input type="text" id="camp-readonly" value="No se puede modificar." readonly>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo disable</h3>
+                        <ul>
+                            <li>Desactiva el campo para que no se puede modificar.</li>
+                            <li>Este campo no se enviara junto con el formulario.</li>
+                        </ul>
+                        <form>
+                            <label for="atr-dis">Campo desactivado: </label>
+                            <input type="text" id="atr-dis" disabled>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="atr-dis">Campo desactivado: &#60/label>
+                                &#60input type="text" id="atr-dis" disabled>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo min y max</h3>
+                        <ul>
+                            <li>Establece el minimo y maximo de un campo numerico.</li>
+                            <li>En caso de que el valor no este dentro del rango, saldra un mensaje de advertencia para el usuario, por lo que no podra enviar el formulario.</li>
+                        </ul>
+                        <form>
+                            <label for="min-max">Campo numerico: </label>
+                            <input type="number" min="2" max="10">
+                            <button>Enviar formularo</button>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="min-max">Campo numerico: &#60/label>
+                                &#60input type="number" min="2" max="10">
+                                &#60button>Enviar formularo&#60/button>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo minlength y maxlength</h3>
+                        <ul>
+                            <li>Establece el minimo y maximo de caracteres de un campo de texto.</li>
+                            <li>En caso de que el texto no este dentro del rango, saldra un mensaje de advertencia para el usuario, por lo que no podra enviar el formulario.</li>
+                        </ul>
+                        <form>
+                            <label for="minl-maxl">Introduce texto: </label>
+                            <input type="text" id="minl-maxl" minlength="2" maxlength="10">
+                            <button>Enviar formulario</button>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="minl-maxl">Introduce texto: &#60/label>
+                                &#60input type="text" id="minl-maxl" minlength="2" maxlength="10">
+                                &#60button>Enviar formulario&#60/button>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo selected</h3>
+                        <ul>
+                            <li>Sirve para establecer una opcion por defecto, similar al atributo checked.</li>
+                        </ul>
+                        <form>
+                            <label for="selec">Selecciona una opcion: </label>
+                            <select name="opciones" id="selec">
+                                <option value="opcion-01">Opcion 1</option>
+                                <option value="opcion-02" selected>Opcion 2</option>
+                            </select>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="selec">Selecciona una opcion: &#60/label>
+                                &#60select name="opciones" id="selec">
+                                    &#60option value="opcion-01">Opcion 1&#60/option>
+                                    &#60option value="opcion-02" selected>Opcion 2&#60/option>
+                                &#60/select>
+                            </code>
+                        </pre>
+
+                    <h3>Atributo autofocus</h3>
+                        <ul>
+                            <li>Enfoca el campo por defecto al cargar el formulario.</li>
+                        </ul>
+                        <form>
+                            <label for="focus-tx">Campo enfocado: </label>
+                            <input type="text" id="focus-tx" autofocus>
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60label for="focus-tx">Campo enfocado: &#60/label>
+                                &#60input type="text" id="focus-tx" autofocus>
+                            </code>
+                        </pre>
             </article>
         </section>
         <aside>
