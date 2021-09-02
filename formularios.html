@@ -547,6 +547,41 @@
                                 &#60input type="text" id="focus-tx" autofocus>
                             </code>
                         </pre>
+
+                    <h3>Atributo action y method</h3>
+                        <ul>
+                            <li>El atributo action es el recurso que se accionara al enviar el formulario</li>
+                            <li>El atributo method puede tener dos valores:</li>
+                            <ul>
+                                <li>GET</li>
+                                <li>POST</li>
+                            </ul>
+                        </ul>
+                        <form action="./index.html" method="GET">
+                            <label for="dato-1">Escribe el primer dato(get): </label>
+                            <input type="text" id="dato-1" name="date-one" >
+                            <input type="submit">
+                        </form>
+                        <form action="./index.html" method="POST">
+                            <label for="dato-2">Escribe el segundo dato(post): </label>
+                            <input type="text" id="dato-2" name="date-two">
+                            <input type="submit">
+                        </form>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60form action="./index.html" method="GET">
+                                    &#60label for="dato-1">Escribe el primer dato(get): &#60/label>
+                                    &#60input type="text" id="dato-1" name="date-one" >
+                                    &#60input type="submit">
+                                &#60/form>
+                                &#60form action="./index.html" method="POST">
+                                    &#60label for="dato-2">Escribe el segundo dato(post): &#60/label>
+                                    &#60input type="text" id="dato-2" name="date-two">
+                                    &#60input type="submit">
+                                &#60/form>
+                            </code>
+                        </pre>
             </article>
         </section>
         <aside>
