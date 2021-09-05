@@ -1,9 +1,8 @@
 /*
     Aqui se agregaran los estilos de imagenes, etc, del archivo contenido-embebido.html
 */
-.img-logo-1, .img-logo-2{
+.img-logo-1{
     width: 5rem;
     height: auto;
     margin: 0px;
-
 }

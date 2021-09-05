@@ -37,7 +37,8 @@ body{
 }
 h1, h2{
     padding: 1rem;
-    text-shadow: 5px 4px 5px #545f6b;
+    text-shadow: 10px 8px 8px #545f6b;
+    color: #7475da;
 }
 h3,h4,h5,h6{
     padding: 0.5rem;
@@ -66,12 +67,17 @@ main{
 section{
     display: grid;
     padding: 1rem;
+    min-width: 1rem;/*<===clave 1 para que funcione en celular*/
     border: var(--border-sections);
+    grid-template-columns: 100%; /*<== clave 2*/
+    grid-template-rows: auto;
     justify-content: left;
     align-content: center;
+    grid-auto-flow: row;
 }
 pre{
     border: var(--border-sections);
+    overflow: auto;
 }
 aside{
     border: var(--border-sections);

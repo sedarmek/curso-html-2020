@@ -60,7 +60,10 @@
                 <header>
                     <h2>Insertar imagenes en el HTML</h2>
                 </header>
-                <h3>Insertar imagen de tipo svg</h3>
+                <h3>Etiqueta img</h3>
+                <ul>
+                    <li>Se utiliza para cargar una imagen, el atributo "src" tiene la ruta del archivo.</li>
+                </ul>
                 <!--Forma 1 con vsg: img con archivo svg-->
                 <img src="/contenido-embebido/assets/imagenes/logo-de-facebook.svg" alt="Logo de facebook" class="img-logo-1">
                 
@@ -78,6 +81,23 @@
                 <footer>
                     <a href="https://whatismyviewport.com/" target="_blank">Pagina para ver el DPR.</a>
                 </footer>
+            </article>
+            <article>
+                <header><h2>Atributo srcset</h2></header>
+                <ul>
+                    <li>Sirve para tener varias imagenes(con diferentes medidas,resoluciones), y asi cargar el archivo que se adapte mejor al dispositivo.</li>
+                    <li>Dependiendo del DPR sera la imagen que se pinte para el usuario.
+                        <ul>
+                            <li>La forma de declarar el DPR sera con xN, siendo "x" constante y "N" el valor del DPR.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img srcset="/contenido-embebido/assets/imagenes/facebook-128px.png, 
+                            /contenido-embebido/assets/imagenes/facebook-64px.png x2"
+                     alt="logo-de-facebook-2" class="img-logo-2">
+                <pre><code>Codigo:<br>&#60img srcset="/contenido-embebido/assets/imagenes/facebook-128px.png,<br>/contenido-embebido/assets/imagenes/facebook-64px.png x2"<br>alt="logo-de-facebook-2" class="img-logo-2">
+                    </code>
+                </pre>
             </article>
         </section>
 
