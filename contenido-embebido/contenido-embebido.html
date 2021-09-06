@@ -18,7 +18,7 @@
     <header class="header-principal">
         <h1>Contenido embebido</h1>
         <nav>
-            <a href="./index.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
         </nav>
     </header>
 
@@ -58,7 +58,7 @@
             </article>
             <article>
                 <header>
-                    <h2>Insertar imagenes en el HTML</h2>
+                    <h2>Insertar imagenes en HTML</h2>
                 </header>
                 <h3>Etiqueta img</h3>
                 <ul>
@@ -73,7 +73,7 @@
                     </footer>
             </article>
             <article>
-                <header><h2>Device pixel ratio</h2></header>
+                <header><h3>Device pixel ratio</h3></header>
                 <dl>
                     <dt>DPR(Pixeles reales / Pixeles disponibles)</dt>
                     <dd>Es la relacion entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para pintar contenido(viewport).</dd>
@@ -83,22 +83,66 @@
                 </footer>
             </article>
             <article>
-                <header><h2>Atributo srcset</h2></header>
+                <header><h3>Atributo srcset</h3></header>
                 <ul>
                     <li>Sirve para tener varias imagenes(con diferentes medidas,resoluciones), y asi cargar el archivo que se adapte mejor al dispositivo.</li>
                     <li>Dependiendo del DPR sera la imagen que se pinte para el usuario.
                         <ul>
-                            <li>La forma de declarar el DPR sera con xN, siendo "x" constante y "N" el valor del DPR.</li>
+                            <li>La forma de declarar el DPR sera con Nx, siendo"N" el valor del DPR  y "x" una constante.</li>
                         </ul>
                     </li>
                 </ul>
                 <img srcset="/contenido-embebido/assets/imagenes/facebook-128px.png, 
-                            /contenido-embebido/assets/imagenes/facebook-64px.png x2"
+                            /contenido-embebido/assets/imagenes/facebook-64px.png 2x"
                      alt="logo-de-facebook-2" class="img-logo-2">
-                <pre><code>Codigo:<br>&#60img srcset="/contenido-embebido/assets/imagenes/facebook-128px.png,<br>/contenido-embebido/assets/imagenes/facebook-64px.png x2"<br>alt="logo-de-facebook-2" class="img-logo-2">
+
+                <footer>
+                    <pre><code>Codigo:<br>&#60img srcset="/contenido-embebido/assets/imagenes/facebook-128px.png,<br>/contenido-embebido/assets/imagenes/facebook-64px.png x2"<br>alt="logo-de-facebook-2" class="img-logo-2">
                     </code>
-                </pre>
+                    </pre>
+                </footer>
             </article>
+            <article>
+                <header><h3>Etiqueta picture</h3></header>
+                <ul>
+                    <li>Es un contenedor usado para especificar múltiples elementos "source" y un elemento "img" contenido en él para proveer versiones de una imagen para diferentes escenarios de dispositivos.
+                        <ul>
+                            <li>La etiqueta "source" especifica recursos de medios múltiples para los elementos(imagenes, audio, video).
+                                <ul><li>El atributo "media" declara una condicion para cargar la imagen.</li></ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <picture>
+                    <source srcset="/contenido-embebido/assets/imagenes/facebook-64px.png" media="(max-width:1200px)">
+                    <img src="/contenido-embebido/assets/imagenes/facebook-128px.png" alt="logo-por-defecto">
+                </picture>
+                <footer>
+                    <pre>
+                        <code>
+                            Codigo:
+                            &#60picture>
+                                &#60source srcset="/contenido-embebido/assets/imagenes/facebook-64px.png" media="(max-width:1200px)">
+                                &#60img src="/contenido-embebido/assets/imagenes/facebook-128px.png" alt="logo-por-defecto">
+                            &#60/picture>
+                        </code>
+                    </pre>
+                </footer>
+            </article>
+            <article>
+                <header><h2>Insertar audio en HTML</h2></header>
+                <ul>
+                    <li>La etiqueta "audio" declara el audio a reproducir.
+                        <ul>
+                            <li>El atributo booleano "controls" muestra los controles de audio al usuario, es obligatorio.</li>
+                            <li>El atributo booleano "autoplay" reproduce el audio automaticamente al entrar en la pagina.</li>
+                            <li>El atributo booleano "muted" mutea el auto por defecto.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <audio src="/contenido-embebido/assets/audio/Up Theme (Sad Verse Extended).mp4" controls autoplay muted></audio>
+            </article>
+
         </section>
 
         <aside>

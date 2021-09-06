@@ -6,6 +6,8 @@
     color: #aacbe6;
     box-sizing: border-box;
     text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 :root{
     --background-color: #26252c;/*color de los hijos*/
