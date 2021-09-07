@@ -114,15 +114,15 @@
                     </li>
                 </ul>
                 <picture>
-                    <source srcset="/contenido-embebido/assets/imagenes/facebook-64px.png" media="(max-width:1200px)">
-                    <img src="/contenido-embebido/assets/imagenes/facebook-128px.png" alt="logo-por-defecto">
+                    <source srcset="./contenido-embebido/assets/imagenes/facebook-64px.webp" media="(max-width:1200px)">
+                    <img src="./assets/imagenes/facebook-128px.png" alt="logo-por-defecto">
                 </picture>
                 <footer>
                     <pre>
                         <code>
                             Codigo:
                             &#60picture>
-                                &#60source srcset="/contenido-embebido/assets/imagenes/facebook-64px.png" media="(max-width:1200px)">
+                                &#60source srcset="/contenido-embebido/assets/imagenes/facebook-64px.webp" media="(max-width:1200px)">
                                 &#60img src="/contenido-embebido/assets/imagenes/facebook-128px.png" alt="logo-por-defecto">
                             &#60/picture>
                         </code>
@@ -137,12 +137,32 @@
                             <li>El atributo booleano "controls" muestra los controles de audio al usuario, es obligatorio.</li>
                             <li>El atributo booleano "autoplay" reproduce el audio automaticamente al entrar en la pagina.</li>
                             <li>El atributo booleano "muted" mutea el auto por defecto.</li>
+                            <li>El atributo booleano "loop" se crea un bucle que reproduce el audio de forma indefinida.</li>
                         </ul>
                     </li>
                 </ul>
-                <audio src="/contenido-embebido/assets/audio/Up Theme (Sad Verse Extended).mp4" controls autoplay muted></audio>
+                <audio src="/contenido-embebido/assets/audio/Up Theme (Sad Verse Extended).mp4" controls autoplay muted loop></audio>
             </article>
-
+            <article>
+                <header><h2>Insertar video en HTML</h2></header>
+                <ul>
+                    <li>La etiqueta video declara el video a reproducir.
+                        <ul>
+                            <li>Tiene los mismos atributos que la etiqueta "audio", mas un atributo adicional.</li>
+                            <li>Con el atributo "poster" se pinta una imagen por defecto antes de reproducir el video.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <video src="./assets/videos/Hina2.mp4" controls muted loop poster="./assets/imagenes/cursor-1920x1080.png" class="videos"></video>
+                <footer>
+                    <pre>
+                        <code>
+                            Codigo:
+                            &#60video src="./assets/videos/Hina2.mp4" controls muted loop poster="./assets/imagenes/cursor-1920x1080.png" class="videos"></video>
+                        </code>
+                    </pre>
+                </footer>
+            </article>
         </section>
 
         <aside>
