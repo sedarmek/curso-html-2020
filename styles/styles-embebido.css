@@ -7,5 +7,9 @@
     margin: 0px;
 }
 .videos{
-    width: 100%;
+    width: 50%;
+}
+img{
+    max-width: 100%;
+    
 }
