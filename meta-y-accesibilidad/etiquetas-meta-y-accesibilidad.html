@@ -1,0 +1,89 @@
+<!-- Establece el tipo de estadar del documento, en este caso es html5 -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento html -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con informacion de nuestra pagina web -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Texto que sera mostrado en el buscador de google.">
+    <link rel="stylesheet" href="../styles/principal-style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/meta/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/meta/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/meta/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/meta/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/meta/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/meta/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/meta/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/meta/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/meta/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/meta/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/meta/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/meta/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/meta/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/meta/favicons/manifest.json">
+    <title>Curso de html 2020:accesiblidad</title>
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Etiquetas meta y accesibilidad</h1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <header><h2>Etiqueta meta</h2></header>
+                <ul>
+                    <li>Proporciona instrucciones para la indexación en los buscadores web.</li>
+                    <li>Se deben escribir dentro de la etiqueta "head".</li>
+                </ul>
+                <pre>
+                    <code>
+                        Codigo:
+                        &#60head>
+                        &#60meta charset="UTF-8">
+                        &#60meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        &#60meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &#60meta name="description" content="Texto que sera mostrado en el buscador de google.">
+                        &#60title>Curso de html 2020:accesiblidad&#60/title>
+                        &#60/head>
+                    </code>
+                </pre>
+            </article>
+            <article>
+                <header><h2>Favicons</h2></header>
+                <ul>
+                    <li>Es la imagen que se muestra en la pestaña del navegador.</li>
+                    <li>Se usa una etiqueta "link" para declarar el elemento.</li>
+                    <li>Debe estar dentro de la etiqueta "head".</li>
+                </ul>
+                <pre>
+                    <code>
+                        Codigo:
+                        &#60link rel="apple-touch-icon" sizes="57x57" href="./assets/meta/favicons/apple-icon-57x57.png">
+                    </code>
+                </pre>
+            </article>
+            
+        </section>
+        <aside>
+            <h2>Cursos</h2>
+            <ul class="ul-aside">
+                <li><a href="https://sedarmek.github.io/curso-html-2020/">HTML</a></li>
+                <li><a href="https://sedarmek.github.io/cursoCss2020/">CSS</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>Seda SA de CV</footer>
+    
+</body>
+</html>
