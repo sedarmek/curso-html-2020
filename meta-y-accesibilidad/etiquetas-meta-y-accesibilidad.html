@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Texto que sera mostrado en el buscador de google.">
     <link rel="stylesheet" href="../styles/principal-style.css">
-
+    <link rel="stylesheet" href="../styles/meta-y-accesibilidad.css">
+    <!-- Codigo de favicons para los diferentes navegadores -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/meta/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/meta/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/meta/favicons/apple-icon-72x72.png">
@@ -26,6 +27,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/meta/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/meta/favicons/favicon-16x16.png">
     <link rel="manifest" href="./assets/meta/favicons/manifest.json">
+    <!--Libreria para insertar iconos de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Curso de html 2020:accesiblidad</title>
 </head>
 <body>
@@ -70,8 +73,27 @@
                         &#60link rel="apple-touch-icon" sizes="57x57" href="./assets/meta/favicons/apple-icon-57x57.png">
                     </code>
                 </pre>
+                <footer>
+                    Pagina recomendada para convertir una imagen en un set de favicons para diferentes navegadores:
+                    <a href="https://www.favicon-generator.org/" target="_blank">https://www.favicon-generator.org/</a>
+                </footer>
             </article>
-            
+            <article>
+                <header><h2>Uso de Fontawesome</h2></header>
+                <ul>
+                    <li>Libreria de iconos, una de las mas usada en el mundo.</li>
+                    <li>Primero se pega la etiqueta link de la libreria dentro de la etiqueta "head" para poder usarla.</li>
+                    <li>Y despues se pega el codigo del icono que quieras dentro de la pagina.</li>
+                </ul>
+                <i class="far fa-bell" id="icono-campana"> Campana</i>
+                <pre>
+                    <code>
+                        Codigo:
+                        &#60link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="C6Up4h/KRBcigm" crossorigin="anonymous">
+                        &#60i class="far fa-bell"> Campana&#60/i>
+                    </code>
+                </pre>
+            </article>
         </section>
         <aside>
             <h2>Cursos</h2>
