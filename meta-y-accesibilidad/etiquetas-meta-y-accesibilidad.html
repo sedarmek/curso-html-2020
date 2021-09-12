@@ -29,6 +29,11 @@
     <link rel="manifest" href="./assets/meta/favicons/manifest.json">
     <!--Libreria para insertar iconos de Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Open Graph -->
+    <!-- <meta property="og:title" content="Curso de html 2020:accesiblidad" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> -->
     <title>Curso de html 2020:accesiblidad</title>
 </head>
 <body>
@@ -93,6 +98,71 @@
                         &#60i class="far fa-bell"> Campana&#60/i>
                     </code>
                 </pre>
+            </article>
+            <article>
+                <header><h2>Accesibilidad</h2></header>
+                <ul><li>Es la práctica inclusiva de garantizar que el mayor numero de personas puedan usarlo, incluyendo las personas con discapacidad.</li></ul>
+                <article>
+                    <header><h3>Atributo tabindex</h3></header>
+                        <ul><li>Permite al usuario moverse a traves de la pagina siguiendo un orden,usando la tecla tab.</li></ul>
+                        <p tabindex="1">Elemento 1</p>
+                        <p tabindex="2">Elemento 2</p>
+                        <p tabindex="3">Elemento 3</p>
+                        <footer>
+                            <pre>
+                                <code>
+                                    Codigo:
+                                    &#60p tabindex="1">Elemento 1&#60/p>
+                                    &#60p tabindex="2">Elemento 2&#60/p>
+                                    &#60p tabindex="3">Elemento 3&#60/p>
+                                </code>
+                            </pre>
+                    </footer>
+                </article>
+                <article>
+                    <header><h3>Atributo aria-label</h3></header>
+                        <ul><li>Sirve para indicar al navegador la informacion que debe leer(usando screen reader).</li></ul>
+                        <a href="#" aria-label="Leer mas sobre el tema de programacion web 2020">Leer mas</a>
+                        <footer>
+                            <pre>
+                                <code>
+                                    Codigo:
+                                    &#60a href="#" aria-label="Leer mas sobre el tema de programacion web 2020">Leer mas&#60/a>
+                                </code>
+                            </pre>
+                    </footer>
+                </article>
+                <article>
+                    <header><h3>Atributo role</h3></header>
+                        <ul><li>Sirve para indicarle al navegador sobre que tipo de elemento nos estamos posicionando.</li></ul>
+                        <a href="#" role="link">Leer mas</a>
+                        <footer>
+                            <pre>
+                                <code>
+                                    Codigo:
+                                    &#60a href="#" role="link">Leer mas&#60/a>
+                                </code>
+                            </pre>
+                    </footer>
+                </article>
+            </article>
+            <article>
+                <header><h2>Protocolo Open Graph</h2></header>
+                    <ul><li>Es un protocolo creado por Facebook para poder elegir que se mostrara en una publicacion cuando se comparta un link.</li></ul>
+                    <picture>
+                        <img src="./assets/meta/imagenes/open-graph.png" alt="#" class="img-ej-open-graph">
+                    </picture>
+                    <footer>
+                        <pre>
+                            <code>
+                                Codigo:
+                                &#60meta property="og:title" content="The Rock" />
+                                &#60meta property="og:type" content="video.movie" />
+                                &#60meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+                                &#60meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+                            </code>
+                        </pre>
+                    </footer>
             </article>
         </section>
         <aside>

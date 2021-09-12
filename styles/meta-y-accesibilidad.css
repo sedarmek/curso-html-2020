@@ -4,3 +4,6 @@ display: inline-block;
  margin: 1rem 2rem;
  padding: 1.1rem;
 }
+.img-ej-open-graph{
+    max-width: 50%;
+}
