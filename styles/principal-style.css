@@ -36,6 +36,14 @@ body{
     grid-area: "header";
     justify-content: center;
     align-content: center;
+    grid-gap: .1rem;
+}
+.header-principal nav{
+    background-color: #3a3636;
+    padding: 1rem 2rem;
+}
+.header-principal nav:hover{
+    background-color: #48474b;
 }
 h1, h2{
     padding: 1rem;
@@ -44,7 +52,7 @@ h1, h2{
 }
 h3,h4,h5,h6{
     padding: 0.5rem;
-    text-shadow: 5px 4px 5px #545f6b;
+    text-shadow: 5px 4px 8px #545f6b;
     color: #9090e9;
 }
 p, li, hr{
@@ -77,6 +85,28 @@ section{
     align-content: center;
     grid-auto-flow: row;
 }
+.temas-index > h3, .temas-index > h2{
+    background-color: #333236;
+    border: 0.2rem solid #3c3d3f;
+    margin-bottom: 0.1rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.temas-index a{
+    padding: 1rem ;
+}
+.temas-index a:hover{
+    background-color: #48474b;
+}
+.picture-img-index{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.img-html-2020{
+    max-width: 50%;
+}
 pre{
     border: var(--border-sections);
     overflow: auto;
@@ -89,15 +119,15 @@ aside{
     justify-content: center;
 }
 .ul-aside{
-    border: var(--border-sections);
     margin: 1em .1em;
     list-style: none;
     display: grid;
     align-content: flex-start;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
 }
 .ul-aside li{
     background-color: #5b4d72;
+    padding: 0.8rem 2rem;
     display: grid;
     justify-content: center;
     align-content: center;
