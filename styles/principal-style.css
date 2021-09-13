@@ -85,16 +85,19 @@ section{
     align-content: center;
     grid-auto-flow: row;
 }
-.temas-index > h3, .temas-index > h2{
+.temas-index > h2{
     background-color: #333236;
     border: 0.2rem solid #3c3d3f;
-    margin-bottom: 0.1rem;
+    margin-top: 1rem;
     display: grid;
     justify-content: center;
     align-content: center;
 }
 .temas-index a{
-    padding: 1rem ;
+    padding: 0.5rem ;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 .temas-index a:hover{
     background-color: #48474b;
